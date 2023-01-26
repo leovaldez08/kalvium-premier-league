@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kalvium Premier League</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <h1 style="color:red ;">KPL</h1>
+        <img src="assets/dreamteam.svg" class="DREAMTEAM">
+    </nav>
+    <section class="manager-details">
+        <div class="Rectangle">
+            <p class="title">MANAGER'S PROFILE </p>
+            <div class="grid-container">
+                <div>
+                    <p class="subtitle">NAME</p>
+                    <p class="insidetext">MANAGER NAME</p>
+                </div>
+                <div>
+                    <p class="subtitle">AGE</p>
+                    <p class="insidetext">AGE</p>
+                </div>
+                <div>
+                    <p class="subtitle">TEAM NAME</p>
+                    <p class="insidetext">TEAM NAME</p>
+                </div>
+                <div>
+                    <p class="subtitle">TROPHIES</p>
+                    <p class="insidetext">NUMBER OF TROPHIES</p>
+                </div>
+            </div>
+        </div>
+        <div class="Rectangle">
+            <p class="title">FORMATION</p>
+            <div class="formation-container">
+                <img src="assets/group-5.svg" class="playground">
+                <img src="./assets/goalkeeper.svg" alt="player" class="goalkeeper">
+                <div class="player-container defence">
+                </div>
+                <div class="player-container midfield">
+                </div>
+                <div class="player-container forward">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Rectangle squad">
+        <div class="title-container" id="type-of-filter">
+            <p class="title">SQUAD</p>
+            <div class="filter-container">
+                <p class="subtitle"><i class="fas fa-filter"></i><span> APPLY
+                        FILTERS</span>
+                </p>
+            </div>
+        </div>
+        <div class="title-container" id="filter-type">
+            <div class="dropdown">
+                <p class="subtitle non-bold">Debut Year <span id="debutflag"></span> <img src="./assets/down-arrow.svg"
+                        alt="down">
+                    <div class="dropdown-list" id="dropdown-debut">
+                    </div>
+                </p>
+            </div>
+
+            <div class="dropdown">
+                <p class="subtitle non-bold">Position <span id="positionflag"></span> <img src="./assets/down-arrow.svg"
+                        alt="down">
+                    <div class="dropdown-list" id="dropdown-position">
+                    </div>
+                </p>
+            </div>
+
+            <div class="dropdown">
+                <p class="subtitle non-bold">Team <span id="teamflag"></span><img src="./assets/down-arrow.svg"
+                        alt="down"></p>
+                <div class="dropdown-list" id="dropdown-team">
+                </div>
+            </div>
+
+            <p class="subtitle non-bold team-selected">Younger than <input type="text" class="inputText" id="age">
+            </p>
+
+            <p class="subtitle non-bold team-selected">No. of Awards <input type="text" class="inputText"
+                    id="awardCountTotal"></p>
+
+            <div class="goButton team-selected" id="goButton">Go</div>
+
+            <div class="dropdown">
+                <p class="subtitle non-bold">Award <span id="awardflag"></span> <img src="./assets/down-arrow.svg"
+                        alt="down">
+                    <div class="dropdown-list" id="dropdown-award">
+                    </div>
+                </p>
+            </div>
+
+            <div class="dropdown">
+                <p class="subtitle non-bold award-selected">Country <img src="./assets/down-arrow.svg" alt="down"></p>
+                <div class="dropdown-list" id="dropdown-country">
+                </div>
+            </div>
+
+            <p class="subtitle non-bold award-selected">No. of Awards <input type="text" class="inputText"
+                    id="awardCount"></p>
+
+        </div>
+        <div id="player-container">
+
+        </div>
+    </section>
+    <script type="text/javascript" src="link.js"></script>
+</body>
+
+</html>

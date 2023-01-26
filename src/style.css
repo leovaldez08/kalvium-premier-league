@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: url(assets/bitmap.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-bar,
+.manager-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 80px;
+}
+
+.logo {
+    width: 142px;
+    height: 60px;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+.DREAMTEAM {
+    background-color: transparent;
+    width: 120px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.Rectangle {
+    min-width: 600px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.squad {
+    margin: 40px 80px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #212121;
+    background-color: #DFE5EF;
+    padding: 10px 30px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    background: #DFE5EF;
+    border-top: 1px solid grey;
+}
+
+.squad .subtitle:hover {
+    cursor: pointer;
+}
+
+.subtitle.filtertype-active {
+    border-radius: 15.5px;
+    background-color: #212121;
+    color: white;
+    fill: white;
+}
+
+.subtitle.non-bold {
+    font-weight: normal;
+}
+
+#filter-type,
+#sort-type {
+    display: none;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    color: #212121;
+    padding: 10px 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* margin: 5px; */
+}
+
+.title-container .subtitle {
+    margin: 5px;
+}
+
+.subtitle span {
+    padding-left: 10px;
+}
+
+.subtitle img {
+    padding-left: 10px
+}
+
+.insidetext {
+    font-size: 20px;
+    color: #212121;
+    padding: 0px 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.grid-container div {
+    padding: 30px 0;
+}
+
+.playground {
+    width: 306px;
+    height: 187px;
+    object-fit: contain;
+}
+
+.formation-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.goalkeeper {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player-container {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.defence {
+    top: 63%;
+}
+
+.midfield {
+    top: 40%;
+}
+
+.forward {
+    top: 20%;
+}
+
+.defenders {
+    padding: 20px;
+}
+
+.midfielders {
+    padding: 15px;
+}
+
+.forwards {
+    padding: 10px;
+}
+
+.footballer-card {
+    display: flex;
+    width: 90%;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin: 40px auto 0 auto;
+
+}
+
+.smalltext {
+    font-size: 14px;
+    color: #212121;
+}
+
+.player-photo {
+    width: 130px;
+    height: 130px;
+    margin: 20px;
+}
+
+.major-details,
+.minor-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.minor-details {
+    flex: 1;
+}
+
+.half,
+.second-half,
+.minor-second-half {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 50px;
+}
+
+.second-half,
+.minor-second-half {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+
+.minor-half {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.minor-title {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    color: #212121;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.minor-text {
+
+    font-size: 14px;
+    color: #212121;
+}
+
+.half span {
+
+    font-size: 20px;
+    font-weight: 800;
+    color: #212121;
+}
+
+.inputText {
+    margin-left: 5px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.dropdown-list {
+    display: none;
+    z-index: 2;
+    min-width: 120px;
+    text-align: center;
+    line-height: 1.5em;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown-list p:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.award-selected,
+.team-selected {
+    display: none;
+}
+
+.goButton {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    color: #212121;
+    background: black;
+    color: white;
+    border-radius: 10%;
+    text-align: center;
+    margin: 14px;
+    padding: 4px;
+    cursor: pointer;
+}
